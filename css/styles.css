@@ -47,6 +47,8 @@ button {
 Header Styles
 * * * * * * * * * * * * * * * * * * * * */
 
+
+/* General */
 header {
     height: 80px;
     background: #161616;
@@ -62,7 +64,8 @@ header .logo {
 
 
 
-header ul {
+/* Desktop */
+.desktop-nav ul {
     float: right;
     margin-top: 10px;
     padding: 0;
@@ -70,21 +73,21 @@ header ul {
     text-align: right;
 }
 
-header li {
+.desktop-nav li {
     display: inline-block;
     margin-left: 25px;
 }
 
-header a,
-header a:visited {
+.desktop-nav a,
+.desktop-nav a:visited {
     color: white;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
 
-header a:hover,
-header a:focus,
-header a:active {
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
     opacity: 0.9;
     color: white;
     text-decoration: none;
@@ -94,6 +97,9 @@ header a:active {
     float: left;
 }
 
+
+
+/* Mobile */
 .mobile-nav {
     display: none;
     text-align: center;
@@ -105,6 +111,8 @@ header a:active {
 
 .mobile-nav .hamburger-container,
 .mobile-nav .search-container {
+    vertical-align: top;
+    margin-top: 8px;
     width: 40px;
     display: inline-block;
     margin-left: -4px;
@@ -122,8 +130,6 @@ header a:active {
     color: white;
 }
 
-
-
 @media (max-width: 768px) {
     .mobile-nav {
         display: block;
@@ -136,31 +142,59 @@ header a:active {
 
 
 
+/* * * * * * * * * * * * * * * * * * * * *
+Hero Styles
+* * * * * * * * * * * * * * * * * * * * */
 .hero {
     height: 400px;
     background: #999;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Product Lineup
+* * * * * * * * * * * * * * * * * * * * */
 .product-lineup-container {
     height: 400px;
     background: #333;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Featured Product
+* * * * * * * * * * * * * * * * * * * * */
 .featured-product-container {
     height: 400px;
     background: #444;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Product Support
+* * * * * * * * * * * * * * * * * * * * */
 .product-support-container {
     height: 400px;
     background: #555;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Subscription
+* * * * * * * * * * * * * * * * * * * * */
 .subscription-container {
     height: 400px;
     background: #666;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
 footer {
     height: 400px;
     background: #161616;
