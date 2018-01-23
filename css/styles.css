@@ -18,7 +18,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 h2 {
@@ -35,9 +35,31 @@ p {
     font-family: sans-serif;
 }
 
-button {
+.button {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.red-button {
+    border: 2px solid #e01e3c;
+    background: #e01e3c;
+    color: white;
+}
+
+.light-button {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+.dark-button {
+    border: 2px solid #999;
+    background: transparent;
+    color: #161616;
 }
 
 
@@ -146,9 +168,55 @@ header .logo {
 Hero Styles
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 400px;
+    height: calc(100vh - 80px);
     background: #999;
+    background-image: url('../img/hero-large.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
 }
+
+.hero-text-container {
+    padding-top: 50vh;
+}
+
+.hero-text-container h1 {
+    margin-bottom: 20px;
+}
+
+.hero-text-container p {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        height: inherit;
+        background-image: url('../img/hero-small.jpg');
+    }
+    .hero-text-container {
+        padding: 5em;
+        padding-top: 100px;
+    }
+
+    .hero-text-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text-container p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .hero-text-container .button {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
 
 
 
