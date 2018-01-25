@@ -23,17 +23,17 @@ h1 {
 
 h2 {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 h3 {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 h4 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 p {
@@ -114,12 +114,14 @@ header {
 
 .desktop-nav li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
+
 }
 
 .desktop-nav a,
 .desktop-nav a:visited {
     color: white;
+    font-size: 0.9em;
 }
 
 .desktop-nav a:hover,
@@ -193,7 +195,7 @@ Hero Styles
 }
 
 .hero-text-container {
-    padding-top: 50vh;
+    padding-top: 40vh;
 }
 
 .hero-text-container h1 {
@@ -292,9 +294,12 @@ footer a {
 
 .social-icons li {
     display: inline-block;
+    font-size: 16px;
+    color: #a7a6a6;
 }
 
 .social-icons i {
     font-size: 2em;
     margin-right: 5px;
+    color: #d3d2d2;
 }
